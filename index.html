@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#071e33" />
+  <meta name="description" content="Pharmacy Tools Hub — a unified gateway to practical digital tools for pharmacy practice." />
+  <title>Pharmacy Tools Hub</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Pharmacy Tools Hub home">
+      <span class="brand-mark">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M24 5v38M5 24h38" />
+          <circle cx="24" cy="24" r="18"/>
+        </svg>
+      </span>
+      <span>
+        <strong>Pharmacy Tools Hub</strong>
+        <small>Digital Solutions for Pharmacy Practice</small>
+      </span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#tools">Tools</a>
+      <a href="#about">About</a>
+      <a href="#leaders">Leadership</a>
+    </nav>
+
+    <a class="header-cta" href="#tools">Explore Tools</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> Unified Pharmacy Digital Platform</div>
+        <h1>One hub.<br><em>Five purpose-built tools.</em></h1>
+        <p class="hero-lead">
+          A curated collection of practical digital solutions designed to support safer,
+          faster, and more efficient pharmacy practice.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#tools">Explore the Tools
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-secondary" href="#about">Discover the Hub</a>
+        </div>
+
+        <div class="hero-metrics">
+          <div><strong>05</strong><span>Digital Tools</span></div>
+          <div><strong>24/7</strong><span>Web Access</span></div>
+          <div><strong>01</strong><span>Unified Gateway</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Pharmacy Tools Hub overview">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="core-card">
+          <span class="core-icon">Rx</span>
+          <strong>Pharmacy<br>Tools Hub</strong>
+          <small>Connected Practice</small>
+        </div>
+
+        <a class="floating-tool float-a" href="https://dose-vault.vercel.app" target="_blank" rel="noopener">
+          <span class="mini-icon cyan">DV</span><div><strong>DoseVault</strong><small>Clinical Reference</small></div>
+        </a>
+        <a class="floating-tool float-b" href="https://expiry-rx-mail.vercel.app" target="_blank" rel="noopener">
+          <span class="mini-icon teal">ER</span><div><strong>ExpiryRx</strong><small>Inventory Intelligence</small></div>
+        </a>
+        <a class="floating-tool float-c" href="https://srs-library-updated.vercel.app" target="_blank" rel="noopener">
+          <span class="mini-icon gold">SV</span><div><strong>SRSVault</strong><small>Medication Safety</small></div>
+        </a>
+      </div>
+    </section>
+
+    <section id="tools" class="tools-section">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">The Toolkit</span>
+          <h2>Designed around real pharmacy workflows.</h2>
+        </div>
+        <p>Each tool addresses a focused operational or clinical need while maintaining a clear, mobile-friendly experience.</p>
+      </div>
+
+      <div class="search-row">
+        <label class="search-box">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="toolSearch" type="search" placeholder="Search tools by name or purpose..." />
+        </label>
+        <div class="filter-pills" role="group" aria-label="Tool category filters">
+          <button class="filter-pill active" data-filter="all">All</button>
+          <button class="filter-pill" data-filter="clinical">Clinical</button>
+          <button class="filter-pill" data-filter="safety">Safety</button>
+          <button class="filter-pill" data-filter="operations">Operations</button>
+        </div>
+      </div>
+
+      <div id="toolGrid" class="tool-grid">
+        <article class="tool-card featured" data-category="clinical" data-search="dosevault clinical loading initial dose reference">
+          <div class="card-topline">
+            <span class="tool-number">01</span>
+            <span class="status"><i></i> Live</span>
+          </div>
+          <div class="tool-icon icon-blue">DV</div>
+          <div class="tool-content">
+            <span class="tool-category">Clinical Decision Support</span>
+            <h3>DoseVault</h3>
+            <p>Fast access to loading, initial, and titration dose references for medications requiring careful dose selection.</p>
+          </div>
+          <a class="tool-link" href="https://dose-vault.vercel.app" target="_blank" rel="noopener">
+            Open Tool <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </article>
+
+        <article class="tool-card" data-category="operations safety" data-search="expiryrx high cost medication expiry inventory waste">
+          <div class="card-topline">
+            <span class="tool-number">02</span>
+            <span class="status"><i></i> Live</span>
+          </div>
+          <div class="tool-icon icon-teal">ER</div>
+          <div class="tool-content">
+            <span class="tool-category">Inventory Intelligence</span>
+            <h3>ExpiryRx</h3>
+            <p>Track high-cost medication batches, prioritize dispensing, and identify urgent expiry risks before waste occurs.</p>
+          </div>
+          <a class="tool-link" href="https://expiry-rx-mail.vercel.app" target="_blank" rel="noopener">
+            Open Tool <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </article>
+
+        <article class="tool-card" data-category="safety" data-search="srsvault prescribing error documentation template library medication safety">
+          <div class="card-topline">
+            <span class="tool-number">03</span>
+            <span class="status"><i></i> Live</span>
+          </div>
+          <div class="tool-icon icon-gold">SV</div>
+          <div class="tool-content">
+            <span class="tool-category">Medication Safety</span>
+            <h3>SRSVault</h3>
+            <p>A reusable prescribing-error documentation library that supports consistent, efficient, and high-quality reporting.</p>
+          </div>
+          <a class="tool-link" href="https://srs-library-updated.vercel.app" target="_blank" rel="noopener">
+            Open Tool <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </article>
+
+        <article class="tool-card" data-category="operations" data-search="idslog investigational drug inventory dispensing log">
+          <div class="card-topline">
+            <span class="tool-number">04</span>
+            <span class="status"><i></i> Live</span>
+          </div>
+          <div class="tool-icon icon-violet">ID</div>
+          <div class="tool-content">
+            <span class="tool-category">Investigational Drug Services</span>
+            <h3>IDSLog</h3>
+            <p>Structured inventory and dispensing documentation for investigational medications without patient-identifiable data.</p>
+          </div>
+          <a class="tool-link" href="https://ids-log-updated.vercel.app" target="_blank" rel="noopener">
+            Open Tool <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </article>
+
+        <article class="tool-card wide-card" data-category="clinical operations" data-search="rxcalc prescription controlled medication narcotic quantity calculator">
+          <div class="wide-copy">
+            <div class="card-topline">
+              <span class="tool-number">05</span>
+              <span class="status"><i></i> Live</span>
+            </div>
+            <div class="tool-icon icon-coral">RC</div>
+            <div class="tool-content">
+              <span class="tool-category">Prescription Calculation</span>
+              <h3>RxCalc</h3>
+              <p>Calculate prescription quantities using duration, dose, frequency, and previous supply information in one streamlined workflow.</p>
+            </div>
+          </div>
+          <div class="wide-panel">
+            <div class="calc-preview">
+              <div><span>Duration</span><strong>30 days</strong></div>
+              <div><span>Frequency</span><strong>BID</strong></div>
+              <div><span>Quantity</span><strong>60</strong></div>
+            </div>
+            <a class="tool-link" href="https://rxcalc.vercel.app" target="_blank" rel="noopener">
+              Open Tool <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <div id="noResults" class="no-results" hidden>
+        <strong>No matching tools found.</strong>
+        <span>Try another keyword or category.</span>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="about-card">
+        <div class="about-symbol">
+          <div class="symbol-ring"></div>
+          <span>+</span>
+        </div>
+        <div class="about-copy">
+          <span class="section-kicker">About the Hub</span>
+          <h2>A connected home for practical pharmacy innovation.</h2>
+          <p>
+            Pharmacy Tools Hub brings focused digital solutions into one organized platform.
+            It is designed to simplify access, improve consistency, and help pharmacy teams
+            move from repetitive manual work toward faster, safer, and more reliable workflows.
+          </p>
+          <div class="about-points">
+            <div><strong>Purpose-built</strong><span>Created around pharmacy needs</span></div>
+            <div><strong>Mobile-first</strong><span>Accessible across devices</span></div>
+            <div><strong>Expandable</strong><span>Ready for future tools</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="leaders" class="leaders-section">
+      <div class="section-heading centered">
+        <div>
+          <span class="section-kicker">Project Leadership</span>
+          <h2>Led by pharmacy professionals.</h2>
+        </div>
+        <p>Driving practical innovation with a focus on safety, usability, and real-world pharmacy impact.</p>
+      </div>
+
+      <div class="leaders-grid">
+        <article class="leader-card">
+          <div class="leader-monogram">FA</div>
+          <span>Project Leader</span>
+          <h3>FAISAL ALANAZI</h3>
+          <div class="leader-line"></div>
+        </article>
+        <article class="leader-card">
+          <div class="leader-monogram">YA</div>
+          <span>Project Leader</span>
+          <h3>YARA ALOMARI</h3>
+          <div class="leader-line"></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <span class="brand-mark small">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5v38M5 24h38"/><circle cx="24" cy="24" r="18"/></svg>
+      </span>
+      <div><strong>Pharmacy Tools Hub</strong><span>Digital Solutions for Pharmacy Practice</span></div>
+    </div>
+    <p>Led by <strong>Faisal Alanazi</strong> and <strong>Yara Alomari</strong></p>
+    <p class="copyright">© <span id="year"></span> Pharmacy Tools Hub. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

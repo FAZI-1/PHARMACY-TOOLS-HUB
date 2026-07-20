@@ -1,0 +1,17 @@
+{
+  "name": "Pharmacy Tools Hub",
+  "short_name": "Pharmacy Hub",
+  "description": "A unified gateway to practical digital tools for pharmacy practice.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f6f9fb",
+  "theme_color": "#071e33",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
